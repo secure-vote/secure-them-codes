@@ -39,11 +39,10 @@ stc(loadingHtml, loader);
 
 Loader Objects conform to one of the following:
 
-* `{ loader: "ens-ipfs", ref: "code.secvote.eth", extra: "<STREAM>" }` (**TODO**)
+* `{ loader: "ens-ipfs", ref: "code.secvote.eth", extra: {stream: "master"} }` (**TODO**)
     Use [ENS] ([Ethereum Name Service][ENS]) and [IPFS], starting with the provided
     ENS name and presuming it points to a `StcReleases.sol` contract.
-    `<STREAM>` can be the name of a release stream, or a particular
-    hash.
+    `[stream]` can be the name of a release stream, or a particular multihash.
 * `{ loader: "ipfs", ref "<MULTIHASH>" }` (**TODO**)
     Just load straight from the provided multihash (or CID).
 * `{ loader "ens-mango", ref: "code.secvote.eth", extra: "<BRANCH>" }` (**TODO**)
