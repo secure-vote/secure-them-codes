@@ -39,17 +39,17 @@ stc(loadingHtml, loader);
 
 Loader Objects conform to one of the following:
 
-* `{ loader: "ens-ipfs", ref: "code.secvote.eth", extra: "<STREAM>" }`
-    Use ENS (Ethereum Name Service) and IPFS, starting with the provided
+* `{ loader: "ens-ipfs", ref: "code.secvote.eth", extra: "<STREAM>" }` (**TODO**)
+    Use [ENS] ([Ethereum Name Service][ENS]) and [IPFS], starting with the provided
     ENS name and presuming it points to a `StcReleases.sol` contract.
     `<STREAM>` can be the name of a release stream, or a particular
     hash.
-* `{ loader: "ipfs", ref "<MULTIHASH>" }`
+* `{ loader: "ipfs", ref "<MULTIHASH>" }` (**TODO**)
     Just load straight from the provided multihash (or CID).
-* `{ loader "ens-mango", ref: "code.secure.vote", extra: "<BRANCH>" }`
+* `{ loader "ens-mango", ref: "code.secvote.eth", extra: "<BRANCH>" }` (**TODO**)
     Use ENS and [mango] (git via ethereum / IPFS).
     `<BRANCH>` can be a branch name or release or even a particular hash.
-* `{ loader "custom", ref: <LOADER_OBJECT>, extra: <ANYTHING YOU LIKE> }`
+* `{ loader "custom", ref: <LOADER_OBJECT>, extra: <ANYTHING YOU LIKE> }` (**TODO**)
 
 **Note:** the `extra` param is _always_ optional - each .
 
@@ -67,13 +67,11 @@ Loader objects should look like:
 
 The binary produced by `runDefault` or `runWExtra` will be injected into the page.
 
-### From JS Projects:
-
-__todo: instructions for running from JS projects__
-
 ## Planned features:
 
 * Add your own data-source layers (e.g. replace Ethereum, or replace IPFS
     individually)
 
 [mango]: https://github.com/axic/mango
+[ENS]: https://ens.domains/
+[IPFS]: https://ipfs.io/
