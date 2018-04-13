@@ -1,0 +1,28 @@
+{
+  "name": "secure-them-codes",
+  "version": "0.0.1",
+  "description": "Framework for loading code securely in a browser. Authenticated via Ethereum smart contract.",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/secure-vote/secure-them-codes.git"
+  },
+  "keywords": [
+    "secure",
+    "bootstrap",
+    "code",
+    "deployment",
+    "distribution"
+  ],
+  "author": "SecureVote, Max Kaye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/secure-vote/secure-them-codes/issues"
+  },
+  "homepage": "https://github.com/secure-vote/secure-them-codes#readme",
+  "dependencies": {
+  }
+}
